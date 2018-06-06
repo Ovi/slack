@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'Averta';
+    src: url('Averta-Regular.woff2') format('woff2'),
+        url('Averta-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'Slack-Tiempos';
+    font-style:normal;
+    font-weight:500;
+    src:url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-semibold.woff2)
+    format('woff2'),
+    url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-headline/tiempos-headline-semibold.woff)
+    format('woff');
+    unicode-range:U+0000-F8FE,U+F900-FFFF
+}
+
+@font-face{
+    font-family:'Slack-Tiempos';
+    font-style:italic;
+    font-weight:500;
+    src:url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-text/tiempos-text-semibold-italic.woff2)
+    format('woff2'),
+    url(https://a.slack-edge.com/436da/marketing/fonts/tiempos-text/tiempos-text-semibold-italic.woff)
+    format('woff');
+    unicode-range:U+0000-F8FE,U+F900-FFFF
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    border-bottom: 1px solid #eee;
+    height: 70px;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 70px;
+    float: left;
+    line-height: 70px;
+}
+
+nav ul li:not(:first-child) {
+    float: right;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6d6f7b;
+    font-family: "Averta";
+    transition: color .5s;
+}
+
+nav ul li a:hover {
+    color: #3f46ad;
+}
+
+#logo {
+    display: inline-block;
+    margin-left: 50px;
+    height: 60px;
+    width: 100px;
+    background: url('https://a.slack-edge.com/e539/marketing/img/icons/icon_slack.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+
+#logo img {
+    width: 120px;
+}
+
+.nav-btn {
+    margin-right: 100px;
+}
+
+.nav-btn {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#first div {
+    float: left;
+    width: 50%;
+}
+
+#first div img {
+    width: 100%;
+    padding: 12% 30px;
+    padding-left: 20px;
+}
+
+#first div.right {
+    padding-top: 5%;
+}
+
+#first div h1 {
+    font-family:'Slack-Tiempos';
+    font-size: 77px;
+    color: rgb(50, 54, 72);
+}
+
+#first div p {
+    padding-top: 20px;
+    color: #5b5e6d;
+    font-size: 20px;
+    max-width: 90%;
+    line-height: 25px;
+    font-family: 'Averta';
+}
+
+.subscribe {
+    margin: 40px 0 0 0;
+}
+
+.subscribe input {
+    height: 60px;
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px solid lightgray;
+    font-size: 15.5px;
+    padding-left: 15px;
+    font-family: 'Averta';
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.subscribe input:focus {
+   outline: none;
+   border: 1px solid #3f46ad;
+}
+
+.subscribe button{
+    padding: 20px 30px;
+    background-color: rgb(63, 70, 173);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: bolder;
+    height: 60px;
+}
+
+#first div p#signin {
+    font-size: 14px;
+    padding: 0;
+    font-family: 'Averta';
+}
+
+#first div p#signin a {
+    color:#3f46ad;
+}
+
+
+#companies {
+    clear: both;
+    text-align: center;
+    font-family: 'Averta';
+    background-color: rgb(245, 245, 245);
+    padding: 40px;
+}
+
+#companies>h2{
+    font-size: 32px;
+    font-family:'Slack-Tiempos';
+    color: #323648;
+}
+
+#companies>p {
+    color: #5b5e6d;
+    font-size: 16px;
+    margin: 22px 0;
+}
+
+#companies button {
+    padding: 16px 38px;
+    box-shadow: 0 0 0 1px #9ba0d3;
+    font-family: 'Averta';
+    color: #1c299d;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    margin: 10px;
+    border: 2px solid transparent;
+    transition: border .3s;
+}
+
+#companies button:hover {
+    border: 2px solid #3f46ad;
+    cursor: pointer;
+}
+
+#companies button:active {
+    background-color: #1c299d;
+    color: white;
+}
+
+#logos {
+    margin: 10px 50px;
+}
+
+.brand-logo {
+    width: 33%;
+    float: left;
+    padding: 20px 0;
+    border: 1px solid #ebebeb;
+    height: 120px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#cta {
+    margin: 20px 0;
+    padding: 40px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#cta #cta-1 {
+    width: 30%;
+    float: left;
+}
+
+#cta-1 p:first-child {
+    font-size: 24px;
+    font-family:'Slack-Tiempos';
+    color: #323648;
+}
+
+#cta-1 p:nth-child(2) {
+    font-size: 14px;
+}
+
+#cta #cta-sub {
+    width: 70%;
+    float: right;
+}
+
+#cta-sub .subscribe {
+    margin: 0;
+    padding-left: 120px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+#cta-sub .subscribe input {
+    margin-left: 30px;
+    font-family: 'Averta';
+}
+
+#cta-sub .subscribe button {
+    font-family: 'Averta';
+}
+
+#links {
+    padding-top: 80px;
+    font-size: 14px;
+    padding-bottom: 80px;
+}
+
+#just-logo, #links-collection {
+    float: left;
+}
+
+#just-logo {
+    width: 40%;
+}
+
+#links-collection {
+    width: 60%;
+}
+
+#just-logo a {
+    width: 60px;
+    margin-left: 60px;
+}
+
+.links {
+    float: left;
+    width: 25%;
+    line-height: 30px;
+    color: #6d6f7b;
+}
+
+.links > p{
+    font-weight: bolder;
+    color: #424349;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+
+#footer {
+    background-color: #f5f5f5;
+    height: 80px;
+}
+
+#footer-menu {
+    float: left;
+    padding: 24px 40px;
+}
+
+#social {
+    float: right;
+    padding: 24px 40px 24px 0;
+}
+
+#footer-menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+#footer-menu ul li a {
+    text-decoration: none;
+    color: #505158;
+}
+
+#social i {
+    font-size: 22px;
+    padding: 5px;
+    color: #5b5e6d;
+}
