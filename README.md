@@ -3,4 +3,4 @@
 Slack.com (replica)
 Just a practice
 
-Demo: https://muhammadovi.github.io/slack/
+Demo: https://ovi.github.io/slack/
